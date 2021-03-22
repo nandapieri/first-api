@@ -48,8 +48,8 @@ function sendMail(destMail,name) {
     from: process.env.EMAIL,
     to: destMail,
     subject: 'Bem vindo a Geek Week!',
-    text: 'Olá, '+name+'!\n'+'Você está recebendo esse email para confirmar seu cadastro na geek week!\n'+
-      'Estamos muito felizes em ter você conosco!\nEm breve enviaremos mais novidades!\n\n Geek Store Team'
+    text: 'Olá, '+name+'!\n\n'+'Você está recebendo esse email para confirmar seu cadastro na geek week!\n'+
+      'Estamos muito felizes em ter você conosco!\nEm breve enviaremos mais novidades!\n\n Saudações do Grogu e Geek Store Team'
   };
 
   transporter.sendMail(mailOptions, function(error, info){
